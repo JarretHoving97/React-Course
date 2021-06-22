@@ -10,15 +10,12 @@ const Expenses = (props) => {
 
   const saveSelectedYearHandler = (enteredYear) => {
     setYear(enteredYear);
-
-    // props.onSelectedYear(enteredYear);
   };
 
   const filteredExpenses = props.items.filter((expense) => {
     return expense.date.getFullYear().toString() === year;
   });
 
-  //setup the content if there is any found by the filter
 
   return (
     <div>

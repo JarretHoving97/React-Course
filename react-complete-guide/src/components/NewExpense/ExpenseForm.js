@@ -30,22 +30,11 @@ const ExpenseForm = (props) => {
     props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredDate("");
-    setEnteredAmount("");
-    props.onCancel();
   };
 
   const cancelHandler = () => {
     props.onCancel();
   };
-
-  // if (isInserting === false) {
-  //   return (
-  //     <div className="new-expense__controls">
-  //       <div className="new-expense__actions"></div>
-  //       <button onClick={viewStateHandler}>Add New Expense</button>
-  //     </div>
-  //   );
-  // }
 
   return (
     <form onSubmit={submitHandler}>
